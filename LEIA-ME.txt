@@ -1,0 +1,17 @@
+RENOVO — site + painel editorial (Pages CMS)
+
+1. Crie um repositório no GitHub e envie todos os arquivos desta pasta, incluindo .pages.yml.
+2. No Netlify, escolha Add new project > Import an existing project e conecte esse repositório GitHub.
+3. O Netlify executará o comando do netlify.toml e publicará a pasta dist.
+4. Acesse https://pagescms.org/ e autorize acesso ao repositório no GitHub.
+5. No Pages CMS, abra a coleção Matérias, crie ou edite um texto e marque Situação = Publicado.
+6. Salve. O Pages CMS gravará um commit no GitHub e o Netlify fará uma nova publicação automática.
+
+IMPORTANTE
+- Não use somente Netlify Drop: a publicação automática exige o repositório GitHub conectado.
+- A autenticação do painel é realizada pelo GitHub/Pages CMS. O site público não expõe o painel.
+- Somente os arquivos com status Publicado aparecem no site. Rascunhos ficam no repositório.
+- O formulário Carta RENOVO é demonstrativo e não captura emails.
+- O editor de texto suporta títulos, parágrafos, negrito e itálico nesta primeira versão. Outros elementos precisam de evolução.
+- O site original foi mantido; quando houver matéria publicada, os cartões de exemplo da página inicial serão substituídos pelos cartões reais.
+- Se o Pages CMS não reconhecer alguma configuração, será necessário ajustar .pages.yml conforme a versão atual da plataforma.

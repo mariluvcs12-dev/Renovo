@@ -1,0 +1,45 @@
+media:
+  input: imagens
+  output: /imagens
+content:
+  - name: materias
+    label: Matérias
+    type: collection
+    path: content/materias
+    format: json
+    filename: '{primary}.json'
+    view:
+      fields: [titulo, pilar, status]
+      primary: titulo
+      sort: [titulo]
+    fields:
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+      - name: subtitulo
+        label: Resumo
+        type: text
+      - name: pilar
+        label: Pilar
+        type: select
+        options:
+          values: [Raízes, Mente, Vida, Propósito, Legado, Cultura]
+      - name: status
+        label: Situação
+        type: select
+        default: Rascunho
+        options:
+          values: [Rascunho, Publicado]
+      - name: autora
+        label: Autoria
+        type: string
+      - name: data
+        label: Data
+        type: date
+      - name: capa
+        label: Imagem de capa
+        type: image
+      - name: texto
+        label: Texto da matéria
+        type: rich-text
